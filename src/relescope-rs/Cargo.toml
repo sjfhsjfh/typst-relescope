@@ -1,0 +1,18 @@
+[package]
+name = "relescope-rs"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = []
+error-detail = []
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+proc-macro2 = { version = "1.0.93", features = ["span-locations"] }
+serde = { version = "1.0.218", features = ["derive"] }
+serde_json = "1.0.139"
+syn = { version = "2.0.98", features = ["full"] }
+typst-wasm-protocol = { git = "https://github.com/sjfhsjfh/typst-wasm.git", rev = "0a19c826e4834beff3f49183205aeb1003c4ca1f" }
