@@ -3,9 +3,10 @@ use syn::{parse_str, spanned::Spanned, File, Item};
 use crate::{MyString, PickResult};
 
 /// A function to pick specific function/struct/enum from the Rust source code
-pub(crate) fn pick_rs(src: MyString, name: MyString) -> Result<PickResult, String> {
+pub(crate) fn pick(src: MyString, name: MyString) -> Result<PickResult, String> {
     let file: File = parse_str(&src.0).map_err(|e| e.to_string())?;
     let mut target: Option<&Item> = None;
+    // TODO: Better way to find the target item
     for item in &file.items {
         match item {
             Item::Fn(f) => {

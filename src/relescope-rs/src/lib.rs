@@ -22,7 +22,8 @@ struct PickResult {
 pub fn pick(src: MyString, name: MyString, lang: MyString) -> Result<String, String> {
     let lang: SupportedLang = lang.0.parse()?;
     serde_json::to_string(&match lang {
-        SupportedLang::Rust => langs::rust::pick_rs(src, name)?,
+        SupportedLang::Rust => langs::rust::pick(src, name)?,
+        SupportedLang::Python => langs::python::pick(src, name)?,
     })
     .map_err(|e| e.to_string())
 }

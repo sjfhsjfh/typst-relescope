@@ -12,6 +12,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 proc-macro2 = { version = "1.0.93", features = ["span-locations"] }
+rustpython-parser = { version = "0.4.0", features = ["location"] }
 serde = { version = "1.0.218", features = ["derive"] }
 serde_json = "1.0.139"
 syn = { version = "2.0.98", features = ["full"] }
