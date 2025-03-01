@@ -8,6 +8,8 @@ Relescope is a tool for extracting specific functions, structs, enums, etc. from
 
 在 Typst 文件中导入并使用 `pick` 函数：
 
+Import and use the `pick` function in Typst file:
+
 ````typ
 #import "@preview/relescope:0.0.1": pick
 
@@ -26,6 +28,6 @@ def foo():
 
 ![Example](./examples/example.svg)
 
-## 许可证
+## 许可证 License
 
 MIT License
