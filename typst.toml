@@ -15,5 +15,6 @@ categories = [
     "integration",
     "utility",
 ]
+exclude = ["examples/*.svg"]
 
 [tool]
