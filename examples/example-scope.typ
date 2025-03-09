@@ -1,4 +1,4 @@
-#import "@preview/relescope:0.0.1": scope
+#import "@preview/relescope:0.0.2": scope
 
 #import "example-template.typ": config
 #show: config

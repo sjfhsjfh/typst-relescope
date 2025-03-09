@@ -1,4 +1,4 @@
-#import "@preview/relescope:0.0.1": pick
+#import "@preview/relescope:0.0.2": pick
 
 #import "example-template.typ": config
 #show: config

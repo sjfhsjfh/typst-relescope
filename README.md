@@ -13,7 +13,7 @@ Relescope is a tool for extracting specific functions, structs, enums, etc. from
 Import and use the `pick` function in Typst file:
 
 ````typ
-#import "@preview/relescope:0.0.1": pick
+#import "@preview/relescope:0.0.2": pick
 
 #let src = ```py
 bar = "foo"
@@ -37,7 +37,7 @@ def foo():
 Import and use the `scope` function in Typst file:
 
 ````typ
-#import "@preview/relescope:0.0.1": scope
+#import "@preview/relescope:0.0.2": scope
 
 #let src = ```py
 bar = "foo"
