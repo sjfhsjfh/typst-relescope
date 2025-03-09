@@ -1,1 +1,1 @@
-#import "wrap.typ": pick
+#import "wrap.typ": pick, scope

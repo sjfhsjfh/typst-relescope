@@ -1,8 +1,7 @@
 #import "@preview/relescope:0.0.1": pick
-#import "@preview/zebraw:0.4.3": zebraw
 
-#set page(width: auto, height: auto, margin: 20pt, fill: none)
-#show raw: zebraw
+#import "example-template.typ": config
+#show: config
 
 #let src = ```py
 bar = "foo"
